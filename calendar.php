@@ -81,7 +81,7 @@
             date_default_timezone_set('Europe/Bucharest');
             
             // get user month 
-            $json_user_month_data = json_decode( file_get_contents("http://192.168.0.3/lynx-admin/admin/prepare_data/$actual_year/-1/$u_login") );
+            $json_user_month_data = json_decode( file_get_contents("admin/prepare_data/$actual_year/-1/$u_login") );
 			$arr_user_month = array();
 			
 			foreach($json_user_month_data as $key => $row)
